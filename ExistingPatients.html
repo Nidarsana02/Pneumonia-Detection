@@ -16,7 +16,12 @@
             font-weight: bolder;
             margin-bottom: 5px;
         }
-        
+        h5{
+            font-size: 25px;
+            font-weight: normal;
+            margin-top: 0px;
+            font-style: italic;
+        }
         .drop_down{
             float: right;
             height: 25px;
@@ -51,7 +56,7 @@
         }
         .back_btn{
             background-color:grey;
-            margin-top: 10px;
+            margin-top: 30px;
             margin-bottom: 10px;
             font-size: 20px;
             text-align: center;
@@ -75,15 +80,12 @@
             padding: 5px 10px;
             float: right;
         }
-        .pneumonia_status{
-            font-size: 30px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-            <center><h1>Current Status</h1></center>
+            <center><h1>Existing Patients</h1></center>
+            <center><h5>(Details at the time of admission)</h5></center>
         <div class="drop_down">
             <select class="patient_id">
                 <option value="pt1">ID of patient1</option>
@@ -116,7 +118,6 @@
                 <div class="oxy_sat">Oxygen Saturation: </div>
             </div> 
         </div> 
-        <center><h3 class="pneumonia_status">PNEUMONIA DETECTED: </h3> </center>
         <button type="submit" class="back_btn">Back</button>
     </div> 
 </body>
