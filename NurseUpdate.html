@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 700px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .top img{
+            width: 170px;
+            height: 150px;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+        h5{
+            font-size: 25px;
+            font-weight: normal;
+            margin-top: 0px;
+            font-style: italic;
+        }
+        .search_bar{
+            float: right;
+            height: 25px;
+        }
+        .search_bar input{
+            height: 25px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: inline;
+            float: left;
+            font-size: 20px;
+            font-style: italic;
+            width:200px;
+        }
+        .search_bar button{
+            height:25px;
+            cursor: pointer;
+        }
+        .single_line{
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type="text"]{
+            width: 250px;
+            background-color: rgb(240, 238, 238);
+            border: 1.5px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="number"]{
+            width: 100px;
+            background-color: rgb(240, 238, 238);
+            border: 1.5px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .doc_details{
+            background-color: rgb(240, 238, 238);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .pat_details{
+            background-color: rgb(240, 238, 238);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .display{
+            font-size: 20px;
+        }
+        .add_btn{
+            background-color:rgb(119, 170, 42);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            border: 1px solid darkgreen;
+            border-radius: 50px;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .back_btn{
+            background-color:grey;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .add_btn:hover{
+            background-color:darkgreen;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            border: 1px solid darkgreen;
+            border-radius: 50px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        .back_btn:hover{
+            background-color:dimgray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 5px 10px;
+        }
+        .button_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .button_container .add_btn{
+            margin: 0 auto;
+        }
+        .treat_doc, .treat_doc_id, .room_no, .rythm, .heart_rate, .sbp, .resp_rate {
+            display:inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+                <center><h1>UPDATE DETAILS</h1></center>
+                <center><h5>(Details at the time of admission)</h5></center>
+        </div>
+        <div class="search_bar">
+            <input type="search" placeholder="Search Patient ID">
+            <button class="search_button">
+                <img src="search_icon.png" alt="Search" width="28" height="20">
+            </button>
+        </div>
+        <br>
+        <div class="display">
+
+            <p>ID: </p>
+            <div class="single_line">
+                <div class="pt_age">Age: </div>
+                <div class="pt_gender">Gender: </div>
+            </div>    
+        </div>  
+        
+        <div class="doc_details">
+            <label class="treat_doc">Treatment Doctor: </label>
+            <input type="text">    
+            <br>
+            <label class="treat_doc_id">Treatment Doctor ID: </label>
+            <input type="text">
+            <br>
+            <div class="single_line">
+                <div>
+                    <label class="room_no">Room No.:</label> 
+                    <input type="number">
+                </div>
+                <div>
+                    <label class="bed_no">Bed No.:</label>
+                    <input type="number"> </div>
+            </div> 
+        </div>
+        <div class="pat_details">
+            <label class="rythm">Rythm: </label>
+            <input type="text"> 
+            <div class="single_line">
+                <div>
+                    <label class="heart_rate">Heart Rate: </label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label class="temp">Temperature:</label>
+                    <input type="number"> 
+                </div>
+            </div>
+            <div class="single_line">
+                <div >
+                    <label class="sbp">sbp: </label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label class="dbp">dbp: </label>
+                    <input type="number"> 
+                </div>
+            </div>
+            <div class="single_line">
+                <div>
+                    <label class="resp_rate">Respiratory Rate: </label>
+                    <input type="number">
+                </div>
+                <div>
+                    <labelclass="oxy_sat">Oxygen Saturation: </label>
+                    <input type="number"> </div>
+            </div>
+        </div>
+        <div class="button_container">
+            <button type="submit" class="add_btn">ADD</button>
+            <button type="submit" class="back_btn">Back</button>
+        </div>
+    </div>
+</body>
+</html>
