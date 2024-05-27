@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 700px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+        .drop_down{
+            float: right;
+            height: 25px;
+            margin-top: 20px;
+        }
+        .single_line{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-top: 10px;
+        }
+        .display {
+            background-color: rgb(240, 238, 238);
+            margin-top: 50px;
+            font-size: 20px;
+            padding:5px 5px;
+        }
+        select{
+            height: 25px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: inline;
+            float: left;
+            font-size: 20px;
+            width:200px;
+        }
+        .pt_age,.pt_gender, .room_no, .rythm, .heart_rate, .sbp, .resp_rate, .bed_no, .temp, .dbp, .oxy_sat{
+            display:inline-block;
+            width: 450px;
+        }
+        .back_btn{
+            background-color:grey;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            float: right;
+        }
+        .back_btn:hover{
+            background-color:dimgray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 5px 10px;
+            float: right;
+        }
+        .pneumonia_status{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <center><h1>Current Status</h1></center>
+        <div class="drop_down">
+            <select class="patient_id">
+                <option value="pt1">ID of patient1</option>
+                <option value="pt2">ID of patient2</option>
+            </select>
+        </div>
+        <br>
+        <div class="display">
+
+            <p>Treatment Doctor ID: </p>
+            <div class="single_line">
+                <div class="pt_age">Age: </div>
+                <div class="pt_gender">Gender: </div>
+            </div>    
+            <div class="single_line">
+                <div class="room_no">Room No.: </div>
+                <div class="bed_no">Bed No.: </div>
+            </div> 
+            <p>Rythm: </p>
+            <div class="single_line">
+                <div class="heart_rate">Heart Rate: </div>
+                <div class="temp">Temperature(in Farenheit): </div>
+            </div> 
+            <div class="single_line">
+                <div class="sbp">sbp: </div>
+                <div class="dbp">dbp: </div>
+            </div> 
+            <div class="single_line">
+                <div class="resp_rate">Respiratory Rate: </div>
+                <div class="oxy_sat">Oxygen Saturation: </div>
+            </div> 
+        </div> 
+        <center><h3 class="pneumonia_status">PNEUMONIA DETECTED: </h3> </center>
+        <button type="submit" class="back_btn">Back</button>
+    </div> 
+</body>
+</html>
